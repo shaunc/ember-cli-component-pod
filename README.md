@@ -20,6 +20,6 @@ Will generate `component.js`, `template.hbs` and `style.scss` in
 The comment headers support `yuidoc` tags:
 
 * `@module` -- your app name
-@ `@submodule` -- name of the component.
+* `@submodule` -- name of the component.
 
 
