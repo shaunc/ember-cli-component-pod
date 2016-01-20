@@ -1,26 +1,25 @@
 # Ember-cli-component-pod
 
-This README outlines the details of collaborating on this Ember addon.
+Addon allowing generation of pod components together with `style.scss`
+for [ember-component-css](https://github.com/ebryn/ember-component-css)
+support.
+
+We assume that your `.ember-cli` has `"usePods": true`.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+* `ember install ember-cli-component-pod`
 
-## Running
+## Generate component
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+* `ember g component-pod foo/bar-ish`
 
-## Running Tests
+Will generate `component.js`, `template.hbs` and `style.scss` in
+`app/foo/bar-ish/`.
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+The comment headers support `yuidoc` tags:
 
-## Building
+* `@module` -- your app name
+@ `@submodule` -- name of the component.
 
-* `ember build`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
